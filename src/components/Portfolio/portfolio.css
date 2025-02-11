@@ -1,0 +1,465 @@
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  height:100%;
+  width:100%;
+  padding: 0;
+}
+.headding{
+  font-size:2rem;
+  text-align: center;
+  padding: 10px;
+}
+.Border{
+  border-style: solid;
+  border-color: #cbd5e0;
+  width: 2.5rem;
+  object-fit: cover;
+  }
+
+.contactheading {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactheading h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.contactheading p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  font-size: 18px;
+  margin: auto;
+  color: #cacaca;
+}
+
+.contactbuttons {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  margin: auto;
+}
+
+.arrowbutton {
+  background: #2e3192;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 8px 0;
+}
+
+.arrowbutton:hover {
+  background: #1e2172;
+}
+.arrowbutton:hover .arrowicon {
+  transform: translateY(5px); /* Adjust the distance as needed */
+}
+
+
+.arrowicon {
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ourservices_section {
+  background-color: #fff;
+  padding:10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.swiper-slide-custom .icone{
+  height:100px;
+  border-radius: 10px;
+}
+.swiper-slide-Geeks .icone{
+}
+.custom-icon-size {
+  width: 10px;  
+  height: 10px; 
+}
+.storyContainer {
+  width: 100%;
+  background-color: #fff;
+}
+
+.cardSection {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+img {
+  display: block;
+  transition: transform 0.3s ease-in-out; 
+}
+.portText {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.swiper-slide-Nexa .icone{
+  width:130px;
+  margin-left:20px;
+  height:100px;
+  margin-right:0%;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .cardSection {
+    flex-direction: column;
+  }
+
+  .port_img img {
+    width: 100%;
+  }
+
+  .portText {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cardSection {
+    flex-direction: column;
+  }
+
+  .portText {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .storyimg {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cardSection {
+    flex-direction: column;
+  }
+
+  .storyimg {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .port_img {
+flex-direction: column;
+  }
+
+  .portText {
+    width: 100%;
+  }
+
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+
+.our_work_section {
+  background-color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.our_work_heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2e3192;
+}
+
+.our_work_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 100%;
+  max-height: 1000px;
+  margin: 0 auto;
+  width: 70%;
+  position: relative;
+}
+
+.carosel {
+  width: 50%;
+}
+
+.work_img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.work_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.work_description {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  max-width: 800px;
+  margin-right: 20px;
+  height: 330px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .our_work_content {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .carosel {
+    width: 100%; /* Full width for carousel on smaller screens */
+  }
+
+  .work_description {
+    margin-right: 0; /* Remove right margin for better centering */
+    height: auto; /* Set height to auto for better responsiveness */
+  }
+
+  .our_work_heading {
+    font-size: 2rem;
+  }
+
+  .work_description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .our_work_heading {
+    font-size: 1.5rem;
+  }
+
+  .work_description {
+    font-size: 0.9rem;
+  }
+
+  .our_work_content {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+/* Swiper Box CSS */
+
+.box-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line */
+  justify-content: center;
+  padding: 1rem;
+  background-color: white;
+}
+
+/* Mobile and Tablet responsiveness */
+@media (max-width: 1024px) {
+  .box-container {
+    display: none; /* Hide the box container in tablet and mobile views */
+  }
+}
+
+
+
+
+/* Individual box styling */
+.box {
+  width: 100%;
+   max-width: 230px;
+  padding: 1rem;
+  border-radius: 50px;
+  color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Icon container */
+.icon-container {
+  text-align: center;
+  margin-bottom: 1rem;
+  gap:0;
+}
+ .icone {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+  background-color: transparent; /* Ensure the background is transparent */
+ }
+
+/* Title and description */
+.content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Assuming you are using Tailwind CSS */
+.cardSection {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.reverse .cardSection {
+  flex-direction: row-reverse;
+}
+
+.port_img {
+  flex: 1;
+}
+
+.portText {
+  flex: 1;
+  padding: 1rem;
+}
+
+.headding {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.storyContainer {
+  padding: 20px;
+}
+
+.cardSection {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.port_img {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.storyimg {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.portText {
+  flex: 1;
+  padding: 20px;
+}
+
+.headding {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.shadow-lg {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Increased shadow on all four sides */
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 1024px) {
+  .storyContainer {
+    padding: 15px;
+  }
+
+  .cardSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .port_img {
+    margin-bottom: 20px;
+  }
+
+  .portText {
+    padding: 10px 0;
+  }
+
+  .headding {
+    font-size: 1.75rem;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .headding {
+    font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .Section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 0;
+  }
+
+  .portText {
+    order: 1;
+    padding: 0;
+  }
+
+  .port_img {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .reverse .portText {
+    order: 3;
+  }
+
+  .reverse .port_img {
+    order: 4;
+  }
+
+  .headding {
+    font-size: 1.25rem;
+  }
+
+}
