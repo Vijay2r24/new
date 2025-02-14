@@ -37,14 +37,14 @@ export const projectData = [
       multiImage:false, // Single image
     },
     {
-      title: "MCDMF",
-      technologies: ["React.js", "Node.js", "Websockets", "SQL"],
+      title: "InteriorSoft",
+      technologies: ["React.js", "Node.Js", "SQL", "React Native"],
       descriptions: [
-        "We are thrilled to deliver the MCDMF website, crafted with precision and tailored to meet your unique needs.",
-        "Our team has ensured that the MCDMF website is not only visually stunning but also fully optimized for an exceptional user experience."
+        "Developed Interior Design System, an ERP platform for interior designers to manage orders, payments, and clients.",
+        "Built with React Native (Mobile), React.js (Web), Node.js (Backend), and PostgreSQL (Database)."
       ],
       // imageRight:true, // Set for this project
-      images:[MCDMF],
+      images:[Imly],
       imageRight:false,  // Image on the right side
       useSwiper:false, // Disable Swiper
       multiImage:false, // Single image
@@ -76,6 +76,19 @@ export const projectData = [
       multiImage:false, // Single image
     },
     {
+      title: "MCDMF",
+      technologies: ["React.js", "Node.js", "Websockets", "SQL"],
+      descriptions: [
+        "We are thrilled to deliver the MCDMF website, crafted with precision and tailored to meet your unique needs.",
+        "Our team has ensured that the MCDMF website is not only visually stunning but also fully optimized for an exceptional user experience."
+      ],
+      // imageRight:true, // Set for this project
+      images:[MCDMF],
+      imageRight:true,  // Image on the right side
+      useSwiper:false, // Disable Swiper
+      multiImage:false, // Single image
+    },
+    {
       title: "DA Application",
       technologies: ["React.js", "Node.Js", "Websockets", "PostgreSQL"],
       descriptions: [
@@ -84,23 +97,11 @@ export const projectData = [
       ],
       // imageRight:true, // Set for this project
       images:[DA],
-      imageRight:true,  // Image on the right side
+      imageRight:false, // Image on the right side
       useSwiper:false, // Disable Swiper
       multiImage:false, // Single image
     },
-    {
-      title: "InteriorSoft",
-      technologies: ["React.js", "Node.Js", "SQL", "React Native"],
-      descriptions: [
-        "Developed Interior Design System, an ERP platform for interior designers to manage orders, payments, and clients.",
-        "Built with React Native (Mobile), React.js (Web), Node.js (Backend), and PostgreSQL (Database)."
-      ],
-      // imageRight:true, // Set for this project
-      images:[Imly],
-      imageRight:false,  // Image on the right side
-      useSwiper:false, // Disable Swiper
-      multiImage:false, // Single image
-    },
+  
     {
       title: "E-Commerce Mobile App",
       technologies: ["React Native", "Node.Js", "Android", "IOS"],

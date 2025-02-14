@@ -15,24 +15,28 @@ const CardSection = ({
   }) => {
   return (
     // <div className={`cardSection flex flex-col ${imageRight ? 'md:flex-row-reverse' : 'md:flex-row'} bg-gray-100 p-6 rounded-lg shadow-md`} data-aos="fade-right" data-aos-delay="100">
-      <div className={`cardSection flex flex-col md:!flex-row ${imageRight ? 'md:!flex-row-reverse' : 'md:!flex-row'} bg-gray-100 p-6 rounded-lg shadow-md`} data-aos="fade-right" data-aos-delay="100">
-
+    <div
+    className={`cardSection flex flex-col md:!flex-row ${imageRight ? 'md:!flex-row-reverse' : 'md:!flex-row'} bg-gray-100 p-6 rounded-lg shadow-md`}
+    data-aos="fade-right"
+    data-aos-delay="100"
+  >
       {/* Image Section */}
       <div className="port_img w-full md:w-1/2 flex justify-center">
-        {multiImage ? (
-          <div className="w-full h-auto flex flex-col sm:flex-row gap-4">
-            <img
-              src={images[0]}
-              alt={title}
-              className="transition-transform duration-300 ease-in-out hover:translate-y-5 w-full sm:w-1/2 h-[12rem] sm:h-[22rem] rounded-lg object-contain"
-            />
-            <img
-              src={images[1]}
-              alt={title}
-              className="transition-transform duration-300 ease-in-out hover:translate-y-5 w-full sm:w-1/2 h-[12rem] sm:h-[22rem] rounded-lg object-contain"
-            />
-          </div>
-        ) : useSwiper ? (
+      {multiImage ? (
+  <div className="w-full h-auto flex flex-col sm:flex-row gap-0">
+    <img
+      src={images[0]}
+      alt={title}
+      className="transition-transform duration-300 ease-in-out hover:translate-y-5 w-full sm:w-1/2 h-[8rem] sm:h-[16rem] rounded-lg object-contain"
+    />
+    <img
+      src={images[1]}
+      alt={title}
+      className="transition-transform duration-300 ease-in-out hover:translate-y-5 w-full sm:w-1/2 h-[8rem] sm:h-[16rem] rounded-lg object-contain"
+    />
+  </div>
+) 
+ : useSwiper ? (
           <Swiper 
             modules={[Autoplay]}
             spaceBetween={0}
