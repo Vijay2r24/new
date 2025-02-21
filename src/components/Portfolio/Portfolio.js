@@ -19,6 +19,7 @@ import Mantra from '../../assets/logo/MantraLabs.jpg';
 import Trgt from '../../assets/images/Frame 1000004005.jpg';
 import Nexa from '../../assets/logo/nexa.jpg';
 import MCDMFlogo from '../../assets/images/Mcdmf1 (1).jpg';
+import DATANUBLogo from '../../assets/images/Datanub-Site-logo-2048x641.png'
 import { projectData } from "./projectData"; // Adjust the path accordingly
 const Portfolio = () => {
   useEffect(() => {
@@ -86,7 +87,11 @@ const Portfolio = () => {
   const Box = ({ title, description, icone, bgColor }) => (
     <div className="box text-white-500" style={{ backgroundColor: bgColor }}>
       <div className="icon-container">
-        <img src={icone} alt={title} className="icone" />
+        <img
+          src={icone}
+          alt={title}
+          className={`object-contain mb-3 ${icone.includes("nexa") ? "w-28 h-28 ml-4 mt-4" : "w-44 h-44"}`}
+        />
       </div>
       <div className="content">
         <h2>{title}</h2>
@@ -171,6 +176,14 @@ const Portfolio = () => {
               bgColor=""
             />
           </SwiperSlide>
+          <SwiperSlide className='swiper-slide-Nexa'>
+            <Box
+              title="Astrology Offline"
+              description="Expert Astrologist Website"
+              icone={DATANUBLogo}
+              bgColor=""
+            />
+          </SwiperSlide>
           <SwiperSlide className="swiper-slide-trgt">
             <Box
               title="New Service"
@@ -216,6 +229,9 @@ const Portfolio = () => {
           </div>
           <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
             <img src={Nexa} alt="Client 6" className="w-full h-auto object-contain" />
+          </div>
+          <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
+            <img src={DATANUBLogo} alt="Client 6" className="w-full h-auto object-contain" />
           </div>
           <div className="flex items-center justify-center p-4 bg-white shadow-md rounded-lg transform transition-transform duration-300 hover:scale-105">
             <img src={Trgt} alt="Client 7" className="w-full h-auto object-contain" />
