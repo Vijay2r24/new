@@ -58,9 +58,9 @@ const Portfolio = () => {
       textColor: 'text-white',
     },
     {
-      title: 'Digital Marketing',
-      description: ['SEO (Search Engine Optimization)', 'SMM (Social Media Marketing)', 'Branding'],
-      imageUrl: require('../../assets/images/social1.jpg'),
+      title: 'Artificial Intelligence',
+      description: ['AI-Powered Personalization', 'AI Chatbots and Virtual Assistants', 'AI for Predictive Analytics'],
+      imageUrl: require('../../assets/images/ai2.jpg'),
       bgimage: require('../../assets/images/curveline.jpg'),
       bgColor: '#FFFF',
       textColor: 'text-black',

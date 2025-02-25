@@ -23,7 +23,7 @@ const CardSection = ({
       {/* Image Section */}
       <div className="port_img w-full md:w-1/2 flex justify-center">
       {multiImage ? (
-  <div className="w-full h-auto flex flex-col sm:flex-row gap-0">
+  <div className="w-full h-auto flex  flex-row gap-0">
     <img
       src={images[0]}
       alt={title}
