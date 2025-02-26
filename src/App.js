@@ -118,7 +118,7 @@ function App() {
         {loading && <LoadingSpinner />}{" "}
         {/* Display loading spinner while loading */}
       </Router>
-      <TawkToWidget/>
+      {/* <TawkToWidget/> */}
     </div>
   );
 }
